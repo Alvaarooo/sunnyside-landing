@@ -250,3 +250,124 @@ p{
 .footer-redes svg:hover{
 	fill: hsl(0, 0%, 100%);
 }
+
+
+@media screen and (max-width: 768px) {
+	main{
+		width: 375px;
+		margin: auto;
+	}
+	.hero{
+		height: 60vh;
+		background-image: url('../images/mobile/image-header.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.hero-titulo h1{
+		padding-top: 30px;
+		margin: auto;
+		text-align: center;
+		font-size: 2em;
+		width: 300px;
+		letter-spacing: 5px;
+	}
+	.hero-titulo svg{
+		margin-top: 25px;
+	}
+	.links{
+		display: none;
+	}
+	.contenedor{
+		max-width: 375px;
+	}
+	.tarjeta{
+		display: flex;
+		flex-direction: column;
+	}
+	.reverse{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.tarjeta__texto{
+		width: 80%;
+		justify-content: center;
+		align-items: center;
+	}
+	h2{
+		font-size: 1.5em;
+		margin: 30px 50px;
+		text-align: center;
+	}
+	p{
+		margin-top: 0;
+		margin: 0 10px;
+		text-align: center;
+		letter-spacing: 1px;
+		font-size: .7em;
+	}
+	.tarjeta__texto a{
+		font-size: .7em;
+		margin-bottom: 30px;
+	}
+	.tarjeta-bg{
+		justify-content: flex-end;
+		text-align: center;
+	}
+	.tarjeta-bg h2{
+		font-size: 1.3em;
+		margin: 20px;
+	}
+	.tarjeta-bg p{
+		font-size: .7em;
+		width: 85%;
+	}
+	.cherry{
+		background-image: url('../images/mobile/image-graphic-design.jpg');
+		background-size: cover;
+	}
+	.orange{
+		background-image: url('../images/mobile/image-photography.jpg');
+		background-size: cover;
+	}
+	.contenedor-grid{
+		grid-template-columns: 1fr;
+	}
+	.contenedor-clientes h2{
+		font-size: 1em;
+		margin: 70px 0 40px 0;
+	}
+	.cliente img{
+		width: 70px;
+	}
+	.cliente p{
+		margin: 20px;
+		width:270px;
+		text-align: center;
+	}
+	.cliente__testimonio{
+		margin: 0;
+		text-align: center;
+	}
+	.cliente__testimonio h3{
+		font-size: 1em;
+		margin: 0;
+	}
+	.m-b{
+		margin-bottom: 30px;
+	}
+	.contenedor-final{
+		flex-direction: column;
+	}
+	.row img{
+		max-width: 187.5px;
+	}
+	.footer-contenido svg{
+		margin-bottom: 40;
+	}
+	.footer-contacto{
+		margin-bottom: 0;
+	}
+	.footer-redes{
+		margin-top: 2em;
+	}
+}
