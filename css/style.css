@@ -71,6 +71,9 @@ nav{
 .hero-titulo svg{
 	margin-top: 60px;
 }
+.abrir-menu{
+	display: none;
+}
 /*fin hero*/
 .contenedor{
 	width: 1440px;
@@ -253,12 +256,53 @@ p{
 
 
 @media screen and (max-width: 768px) {
+	nav{
+		max-width: 375px;
+	}
 	main{
-		width: 375px;
+		max-width: 375px;
 		margin: auto;
 	}
+	.abrir-menu{
+		border: none;
+		background-color: transparent;
+		display:block;
+		font-size: 1.5em;
+		color: hsl(0, 0%, 100%);
+	}
+	.links{
+		position: absolute;
+		background-color: hsl(0, 0%, 100%);
+		width: 85%;
+		height: 40vh;
+		top: 100px;
+	}
+	.visible{
+		opacity: 1;
+		visibility: visible;
+	}
+	.hidden{
+		opacity: 0;
+		visibility: hidden;
+	}
+	.links ul{
+		height: 100%;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		gap: 1.5em;
+	}
+	.links ul li a{
+		color: hsl(232, 10%, 55%);
+	}
+	.links ul li:last-child{
+		background-color: hsl(51, 100%, 49%);
+		padding: .6em;
+		border-radius: 30px;
+	}
 	.hero{
-		height: 60vh;
+		height: 70vh;
 		background-image: url('../images/mobile/image-header.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -272,10 +316,7 @@ p{
 		letter-spacing: 5px;
 	}
 	.hero-titulo svg{
-		margin-top: 25px;
-	}
-	.links{
-		display: none;
+		margin-top: 15px;
 	}
 	.contenedor{
 		max-width: 375px;
